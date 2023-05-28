@@ -1,0 +1,51 @@
+/* Importa as fontes 'Krona One' e 'Montserrat' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+/* Estilos para o título */
+.titulo {
+    color: #0059ff;
+    font-family: 'Krona One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para os parágrafos */
+.paragrafo {
+    color: #004edf;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para a div que exibe as informações de idade */
+.info-idade {
+    color: #001336;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    color: #001336;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para o container principal, o qual centraliza os elementos na tela */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Faz o contêiner ocupar toda a altura da tela */
+}
