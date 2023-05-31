@@ -3,6 +3,11 @@ function pulaLinha() {
     return "<br>";
 }
 
+// Função que adiciona uma frase à div 'info-idade' no documento HTML. A frase é passada como argumento para a função.
+function mostra(frase) {
+    divInfoIdade.innerHTML += frase + pulaLinha();
+}
+
 // Define o ano atual
 var ano = 2023;
 
@@ -15,10 +20,10 @@ var idadeTiago = ano - 2010;
 var divInfoIdade = document.querySelector('.info-idade');
 
 // Adiciona as idades das pessoas à div 'info-idade'
-divInfoIdade.innerHTML +=("João tem " + idadeJoao + " anos." + pulaLinha());
-divInfoIdade.innerHTML +=("Giordanna tem " + idadeGiordanna + " anos." + pulaLinha());
-divInfoIdade.innerHTML +=("Tiago tem " + idadeTiago + " anos." + pulaLinha());
+mostra("João tem " + idadeJoao + " anos.");
+mostra("Giordanna tem " + idadeGiordanna + " anos.");
+mostra("Tiago tem " + idadeTiago + " anos.");
 
 // Calcula a média das idades e adiciona à div 'info-idade'
 var media = (idadeJoao + idadeGiordanna + idadeTiago) / 3;
-divInfoIdade.innerHTML +=("A média das idades é de " + Math.round(media) + " anos.");
+mostra("A média das idades é de " + Math.round(media) + " anos.");
